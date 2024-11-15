@@ -21,7 +21,7 @@ with open('user.txt','r') as f:
     user = f.read()
 options = webdriver.ChromeOptions()
 options.add_argument(f"user-data-dir=C:/Users/{user}/AppData/Local/Google/Chrome/User Data")
-driver_path ='chromedriver-win64\chromedriver.exe'  
+driver_path ='chromedriver.exe'  
 service = Service(driver_path)
 dr = webdriver.Chrome(service=service,options=options)
 actions = ActionChains(dr)
